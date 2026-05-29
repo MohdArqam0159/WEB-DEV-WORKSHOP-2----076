@@ -19,7 +19,6 @@ cartButtons.forEach(button => {
   });
 });
 
-// Search Functionality
 
 let searchInput = document.getElementById('searchInput');
 let cards = document.querySelectorAll('.card');
@@ -42,6 +41,3 @@ searchInput.addEventListener('keyup', () => {
   });
 
 });
-console.log("Hello from JavaScript! ");
-alert("Welcome to JavaScript!")
-document.body.style.backgroundColor = "lightblue";
