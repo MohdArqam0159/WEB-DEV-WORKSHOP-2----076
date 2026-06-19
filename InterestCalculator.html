@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple Interest Calculator</title>
+<style>
+body{
+    font-family: Arial;
+    background:#f0f8ff;
+    text-align:center;
+    margin-top:100px;
+}
+.box{
+    width:300px;
+    margin:auto;
+    padding:20px;
+    background:white;
+    border-radius:10px;
+    box-shadow:0 0 10px gray;
+}
+h2{
+    color:darkblue;
+}
+input{
+    width:90%;
+    padding:8px;
+    margin:5px;
+}
+button{
+    background:green;
+    color:white;
+    border:none;
+    padding:8px 15px;
+    border-radius:5px;
+}
+#result{
+    color:red;
+}
+</style>
+</head>
+<body>
+
+<div class="box">
+    <h2>Simple Interest Calculator</h2>
+
+    <input type="number" id="p" placeholder="Principal"><br>
+    <input type="number" id="r" placeholder="Rate"><br>
+    <input type="number" id="t" placeholder="Time"><br>
+
+    <button onclick="calculate()">Calculate</button>
+
+    <h3 id="result"></h3>
+</div>
+
+<script>
+function calculate(){
+    let p=document.getElementById("p").value;
+    let r=document.getElementById("r").value;
+    let t=document.getElementById("t").value;
+
+    let si=(p*r*t)/100;
+
+    document.getElementById("result").innerHTML=
+    "Simple Interest = " + si;
+}
+</script>
+
+</body>
+</html>
